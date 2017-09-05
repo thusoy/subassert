@@ -34,6 +34,7 @@ def get_args():
 
 
 def list_tracks(ass_file):
+    tracks = set()
     with open(ass_file) as fh:
         for line in fh:
             track = extract_track(line)
