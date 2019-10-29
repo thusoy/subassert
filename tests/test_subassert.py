@@ -9,7 +9,7 @@ from subassert import convert_file
 
 
 def test_subassert_regular():
-    source_ass = textwrap.dedent('''
+    source_ass = textwrap.dedent(r'''
         [Script Info]
         ; Test subtitles
         Title: Test
