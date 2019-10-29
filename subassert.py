@@ -17,7 +17,9 @@ def main():
     if args.list_tracks:
         list_tracks(args.input_ass_file)
     else:
-        convert_file(args.input_ass_file, args.tracks)
+        for line in convert_file(args.input_ass_file, args.tracks):
+            print(line)
+
 
 
 def get_args():
@@ -59,7 +61,7 @@ def convert_file(ass_file, tracks):
 
     counter = 1
     for sub in subs:
-        print('%d\n%s\n' % (counter, format_sub(sub)))
+        yield '%d\n%s\n' % (counter, format_sub(sub))
         counter += 1
 
 
