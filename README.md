@@ -1,4 +1,4 @@
-# subassert
+# subassert [![Build Status](https://travis-ci.org/thusoy/subassert.svg?branch=master)](https://travis-ci.org/thusoy/subassert)
 
 Converts subtitles in SSA/ASS format to SRT.
 
